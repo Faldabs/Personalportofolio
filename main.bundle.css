@@ -269,6 +269,7 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
+  appearance: button;
 }
 
 button:not(:disabled),
@@ -328,6 +329,7 @@ progress {
 [type=search] {
   outline-offset: -2px;
   -webkit-appearance: none;
+  appearance: button;
 }
 
 [type=search]::-webkit-search-decoration {
@@ -357,7 +359,7 @@ template {
 }
 
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+.h1, .h2, .h3, .h4, .h5, .h6,.h7 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
@@ -387,6 +389,9 @@ h6, .h6 {
   font-size: 1rem;
 }
 
+h7, .h7 {
+  font-size: 1.25rem;
+}
 
 .lead {
   font-size: 1.25rem;
