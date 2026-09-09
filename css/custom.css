@@ -1,0 +1,114 @@
+/* Custom.css < Do your own thing! */
+
+body {
+    background: transparent;
+}
+
+.image-swap-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-swap-container .img-default {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    animation: slideImage1 20s infinite;
+    transition: opacity 1s ease-in-out;
+}
+
+.image-swap-container .img-hover:nth-child(2) {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    animation: slideImage2 20s infinite;
+    transition: opacity 1s ease-in-out;
+}
+
+.image-swap-container .img-hover:nth-child(3) {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    animation: slideImage3 20s infinite;
+    transition: opacity 1s ease-in-out;
+}
+
+.image-swap-container .img-hover:nth-child(4) {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    animation: slideImage4 20s infinite;
+    transition: opacity 1s ease-in-out;
+}
+
+.image-swap-container .img-hover:nth-child(5) {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    animation: slideImage5 20s infinite;
+    transition: opacity 1s ease-in-out;
+}
+
+
+@keyframes slideImage1 {
+    0%, 20% {
+        opacity: 1;
+    }
+    21%, 100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slideImage2 {
+    0%, 20% {
+        opacity: 0;
+    }
+    21%, 40% {
+        opacity: 1;
+    }
+    41%, 100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slideImage3 {
+    0%, 40% {
+        opacity: 0;
+    }
+    41%, 60% {
+        opacity: 1;
+    }
+    61%, 100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slideImage4 {
+    0%, 60% {
+        opacity: 0;
+    }
+    61%, 80% {
+        opacity: 1;
+    }
+    81%, 100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slideImage5 {
+    0%, 80% {
+        opacity: 0;
+    }
+    81%, 100% {
+        opacity: 1;
+    }
+}
